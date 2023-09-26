@@ -9,7 +9,7 @@ function Cart(){
 	const totalprice = 	cartitem.reduce((acc, item) =>item.price + acc,0);
 
 	return(
-		<section className={`cart ${isCartvisible ? 'cart--active':''}`} >
+		<section className={`cart ${isCartvisible ? '':'cart--active'}`} >
 			<div className="cart-itens">
 				{cartitem.map((cartItem)=> <Cartitem key={cartItem} data={cartItem}/>)}
 				
