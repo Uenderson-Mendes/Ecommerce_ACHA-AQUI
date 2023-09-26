@@ -1,0 +1,127 @@
+.products-card{
+  width: 100%;
+  max-width: 320px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+ 
+  
+
+}
+.car__image{
+  width: 100%;
+  border-radius: 10px;
+}
+.card__infos{
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}.card__prince{
+  font-size: 30px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 10px;
+}.card__title{
+  font-size: 15px;
+  color:  rgba(0, 0, 0, 0.586);
+  line-height: 1.5;
+  font-weight: 500;
+}
+.button_card-add{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: 12px 8px;
+  color: rgb(3, 117, 34);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50px;
+  background-color: #f7f5f5d6;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.products-card:hover{
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+}
+.products-card:hover .button_card-add{
+  display: flex;
+}.button_card-add:hover{
+  font-size: 1.7rem;
+  color: rgb(3, 98, 28);
+  background-color: #e2dfdfd6;
+}.comprar{
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 860px) {
+  .car__image{
+    width:60%;
+
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__prince{
+    font-size: 25px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .products-card{
+    width: 100%;
+    max-width: 320px;
+   
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+   
+    
+  
+  }
+}
+
+@media (max-width: 790px) {
+.card__prince{
+    font-size: 25px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .products-card{
+    width: 100%;
+    max-width: 340px;
+    max-height: 280px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+   
+    
+  
+  }
+  .car__image{
+    width:50%;
+
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

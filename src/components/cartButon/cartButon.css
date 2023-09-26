@@ -1,0 +1,34 @@
+.Cart__button{
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  color: #071e01;
+}
+.cart-Status{
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 11px;
+  font-family: 650;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 790px) {
+  .Cart__button{
+    font-size: 1.8rem;
+    padding: 4px;
+    margin-right: -5%;
+  }
+}

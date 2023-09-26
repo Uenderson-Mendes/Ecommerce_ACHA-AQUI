@@ -1,0 +1,23 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: #dad7d7;
+  font-family: 'Poppins';
+}
+.container{
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+@media (max-width: 790px) {
+  .container{
+    max-width: 1460px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+    
+  }
