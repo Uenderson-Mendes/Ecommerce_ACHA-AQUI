@@ -7,7 +7,7 @@ import appContext from '../../context/Appcontext';
 
 
 function ProductCard({ data }) {
-	const { title, thumbnail, price ,permalink } = data;
+	const { title, thumbnail, price } = data;
 	const {	cartitem, setCartitem} = useContext(appContext);
 
 	const haddd = () =>{
