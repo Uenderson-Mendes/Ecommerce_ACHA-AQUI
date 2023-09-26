@@ -29,7 +29,7 @@ function ProductCard({ data }) {
 			<button type="button" 
 				className="button_card-add"
 				onClick={haddd}><BsFillCartPlusFill /></button>
-			<a href={permalink} className="comprar"  target="_blank" rel="noreferrer">Comprar</a>
+		
 		</section>
 
 	);
