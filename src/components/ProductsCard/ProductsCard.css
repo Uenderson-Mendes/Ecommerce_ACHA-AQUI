@@ -61,7 +61,7 @@
   margin-bottom: 5px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 800px) {
   .car__image{
     width:60%;
 
@@ -93,7 +93,7 @@
   }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 690px) {
 .card__prince{
     font-size: 25px;
     font-weight: 400;
