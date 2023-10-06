@@ -79,7 +79,7 @@
   }
   .products-card{
     width: 100%;
-    max-width: 320px;
+    max-width: 260px;
    
     background-color: white;
     display: flex;
@@ -93,17 +93,17 @@
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 780px) {
 .card__prince{
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 200;
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
   }
   .products-card{
     width: 100%;
-    max-width: 340px;
+    max-width: 160px;
     max-height: 280px;
     background-color: white;
     display: flex;
@@ -122,6 +122,11 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+  }.card__title{
+    font-size: 10px;
+    color:  rgba(0, 0, 0, 0.586);
+    line-height: 1.5;
+    font-weight: 200;
   }
 }
 
