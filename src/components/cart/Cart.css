@@ -1,7 +1,7 @@
 .cart{
   width: 100%;
   max-width: 330px;
-  background-color: white;
+  background-color: rgb(229, 248, 229);
   height: 100vh;
   position: fixed;
   top:0;
@@ -12,7 +12,7 @@
   justify-content: space-between;
   transform: translate(110%, 0);
   transition: all 400ms ease  ;
-
+  box-shadow: -10px 8px 12px rgba(0, 0, 0, 0.542);
 
 }.cart-itens{
   flex-grow: 1;
@@ -29,3 +29,27 @@
 .cart--active{
   transform: translate(0, 0);
 }
+.fechar{
+  position: relative;
+  top: 0;
+  right: 0;
+
+  cursor: pointer;
+
+
+
+  
+}
+
+@media (max-width: 780px) {
+  .fechar{
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 50px;
+    margin-bottom: 10%;
+  
+    
+  }.cart{
+    box-shadow: -30px 8px 12px rgba(0, 0, 0, 0.542);
+  }}
