@@ -1,18 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-// import { RouterProvider } from 'react-router-dom';
-import App from './App';
 
-// import routes from './routes';
-
+import Rotas from './rotas'; // Import without curly braces
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
 	<React.StrictMode>
-		<App />
-		{/* <RouterProvider router={routes} /> */}
+		<Rotas />
 	</React.StrictMode>
 );
-
-

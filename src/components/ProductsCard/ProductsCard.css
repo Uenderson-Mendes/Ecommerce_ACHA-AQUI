@@ -104,8 +104,8 @@
   }
   .products-card{
     width: 100%;
-    max-width: 160px;
-    max-height: 280px;
+    max-width: 175px;
+    max-height: 580px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -117,7 +117,7 @@
   
   }
   .car__image{
-    width:50%;
+    width:60%;
 
     border-radius: 10px;
     text-align: center;
