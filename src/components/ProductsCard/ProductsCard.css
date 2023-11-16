@@ -94,7 +94,7 @@
     font-weight: bold;
   }
   .products-card{
-    max-width: 350px;
+    max-width: 370px;
      min-height: 330px;
      max-height: 330px;
  
@@ -110,10 +110,10 @@
    
    }.button_card-add{
     display: flex;
-  }.button_card-add:hover{
-    font-size: 1.7rem;
+  }.button_card-add{
+    font-size: 1.4rem;
     color: rgb(3, 98, 28);
-    background-color: #e2dfdfd6;
+    background-color: white;
   }.compra-but {
    
     height: 20px;
@@ -131,9 +131,11 @@
     color: #000000;
   }
   .products-card{
-   max-width: 320px;
-    min-height: 220px;
-    max-height: 220px;
+    width: 100%;
+  
+    min-width: 155px;
+    min-height: 225px;
+    max-height: 225px;
 
    
     background-color: white;
