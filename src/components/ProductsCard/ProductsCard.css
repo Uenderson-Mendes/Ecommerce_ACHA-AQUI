@@ -21,6 +21,7 @@
   border: none;
   cursor: pointer;
   height: 25px;
+  overflow: hidden;
   /* Outros estilos do botão de compra */
 }.compra-but:hover{
   background-color: rgb(6, 58, 5);
@@ -94,8 +95,8 @@
   }
   .products-card{
     max-width: 350px;
-     min-height: 320px;
-     max-height: 320px;
+     min-height: 330px;
+     max-height: 330px;
  
     
      background-color: white;
@@ -107,7 +108,13 @@
     
      
    
-   }.compra-but {
+   }.button_card-add{
+    display: flex;
+  }.button_card-add:hover{
+    font-size: 1.7rem;
+    color: rgb(3, 98, 28);
+    background-color: #e2dfdfd6;
+  }.compra-but {
    
     height: 20px;
     /* Outros estilos do botão de compra */
@@ -121,6 +128,7 @@
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #000000;
   }
   .products-card{
    max-width: 320px;
@@ -148,7 +156,7 @@
   }.card__title{
     font-size: 10px;
     color:  rgb(0, 0, 0);
-    line-height: 1.5;
+    line-height: 1.9;
     font-weight: 200;
   }
 }
