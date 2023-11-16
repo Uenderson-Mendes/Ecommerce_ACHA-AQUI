@@ -6,12 +6,25 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   
 
+}.compra-but {
+  width: 100%;
+  position: absolute; /* Adiciona posição absoluta ao botão */
+  bottom: 0; /* Coloca o botão no rodapé do contêiner */
+  background-color: #519e4f;
+  color: #ddd;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  /* Outros estilos do botão de compra */
+}.compra-but:hover{
+  background-color: rgb(6, 58, 5);
+  color: #ddd;
 }
 .car__image{
   width: 100%;
@@ -94,7 +107,11 @@
     
      
    
-   }
+   }.compra-but {
+   
+    height: 20px;
+    /* Outros estilos do botão de compra */
+  }
 }
 @media (max-width: 800px) {
   

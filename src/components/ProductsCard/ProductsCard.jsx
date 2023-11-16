@@ -27,7 +27,7 @@ function ProductCard({ data }) {
 				<BsFillCartPlusFill />
 			</button>
 		
-			<button></button>	
+			<button className="compra-but">comprar</button>	
 		</section>
 	
 	);
