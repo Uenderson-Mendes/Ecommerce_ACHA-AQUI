@@ -5,9 +5,17 @@
   gap: 25px;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 890px) {
   .products {
-    padding: 80px 20px 40px;
+    padding: 120px 40px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .products {
+    padding: 90px 20px 40px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 10px;

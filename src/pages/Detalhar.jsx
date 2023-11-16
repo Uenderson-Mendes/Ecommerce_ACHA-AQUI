@@ -1,50 +1,38 @@
+import React from 'react';
+import {BsCartDashFill} from 'react-icons/bs';
 
-import Header from '../components/Header/Header';
-import Provider  from '../context/provider';
-import React, { useContext } from 'react';
-import '../components/ProductsCard/ProductsCard.css';
-import { BsFillCartPlusFill } from 'react-icons/bs';
 import propTypes from 'prop-types';
 import formatCurrency from '../../src/utils/formatCurrency';
-import appContext from '../../src/context/Appcontext';
 
 
-function Detalhar({ data }){
-	const { title, thumbnail, price } = data;
-	const {	cartitem, setCartitem} = useContext(appContext);
-	
+function Detalhar({data}) {
 
-	const haddd = () =>{
-	
-		setCartitem([...cartitem,data]);
-	};
-
-	return(
-		<Provider>
-			<Header />
-       
-			<section className="products-card">
-				<img src={thumbnail.replace(/\w\.jpg/gi, 'W.jpg')} alt="product" className="car__image" />
-				<div className="card__infos">
-					<h2 className="card__prince">{formatCurrency(price, 'BRL')}</h2>
-					<h2 className="card__title">{title}</h2>
+	const { title, thumbnail, price ,permalink } = data;
 
 
 
-				</div>
-				<button type="button" 
-					className="button_card-add"
-					onClick={haddd}><BsFillCartPlusFill /></button>
+
+	return (
+		<section className="cart-item">
+			<img src={thumbnail} alt="imagem produto" className="cart-item-img" />
+			<div className="cart-itens-contet">
+				<h3 className="cart-item-title">{title}</h3>
+				<h3 className="cart-item-price">{formatCurrency(price,'BRL')}</h3>
+				<a href={permalink} className="comprar"  target="_blank" rel="noreferrer">Finalizar</a>
 		
-			</section>
-
-
-		</Provider>
+				<button type="button" className="button__remove-item" 
+				>
+					<BsCartDashFill/>
+				</button>
+			</div>
+		</section>
 	);
 }
 
 export default Detalhar;
+
 Detalhar.propTypes = {
 	data: propTypes.shape({}),
 
 }.isRequired;
+

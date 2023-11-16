@@ -10,13 +10,15 @@
   width: 90px;
   mix-blend-mode: multiply;
 }
-.cart-item-title{
+.cart-item-title {
   font-size: 0.8rem;
   font-weight: 500;
   color: #000000c1;
   margin-bottom: 8px;
-  
+  overflow: hidden;
+
 }
+
 .cart-item-price{
   font-size: 25px;
   font-weight:500;
@@ -24,7 +26,7 @@
   padding: 0px 40px 0px 20px;
 }.button__remove-item{
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 10px;
   color: red;
   font-size: 1.5rem;

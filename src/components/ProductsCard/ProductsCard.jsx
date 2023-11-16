@@ -7,7 +7,7 @@ import appContext from '../../context/Appcontext';
 import { Link } from 'react-router-dom';
 
 function ProductCard({ data }) {
-	const { title, thumbnail, price, productId } = data;
+	const { title, thumbnail, price } = data;
 	const { cartitem, setCartitem } = useContext(appContext);
 
 	const haddd = () => {
@@ -15,18 +15,21 @@ function ProductCard({ data }) {
 	};
 
 	return (
-		<Link to={`/detalhar/${productId}`}>
-			<section className="products-card">
-				<img src={thumbnail.replace(/\w\.jpg/gi, 'W.jpg')} alt="product" className="car__image" />
-				<div className="card__infos">
-					<h2 className="card__prince">{formatCurrency(price, 'BRL')}</h2>
-					<h2 className="card__title">{title}</h2>
-				</div>
-				<button type="button" className="button_card-add" onClick={haddd}>
-					<BsFillCartPlusFill />
-				</button>
-			</section>
-		</Link>
+	
+		<section className="products-card">
+			<img src={thumbnail.replace(/\w\.jpg/gi, 'W.jpg')} alt="product" className="car__image" />
+			<div className="card__infos">
+				<h2 className="card__prince">{formatCurrency(price, 'BRL')}</h2>
+				<h2 className="card__title">{title}</h2>
+	
+			</div>
+			<button type="button" className="button_card-add" onClick={haddd}>
+				<BsFillCartPlusFill />
+			</button>
+			<Link to={`/detalhar/${haddd}`}>
+				<button></button>	</Link>
+		</section>
+	
 	);
 }
 
