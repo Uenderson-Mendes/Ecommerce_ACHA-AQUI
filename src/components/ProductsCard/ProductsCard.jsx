@@ -4,7 +4,7 @@ import { BsFillCartPlusFill } from 'react-icons/bs';
 import PropTypes from 'prop-types'; // Correção: Use 'PropTypes' em vez de 'propTypes'
 import formatCurrency from '../../utils/formatCurrency';
 import appContext from '../../context/Appcontext';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 function ProductCard({ data }) {
 	const { title, thumbnail, price } = data;
@@ -26,8 +26,8 @@ function ProductCard({ data }) {
 			<button type="button" className="button_card-add" onClick={haddd}>
 				<BsFillCartPlusFill />
 			</button>
-			<Link to={`/detalhar/${haddd}`}>
-				<button></button>	</Link>
+		
+			<button></button>	
 		</section>
 	
 	);
