@@ -156,10 +156,10 @@
     justify-content: center;
     align-items: center;
   }.card__title{
-    font-size: 10px;
+    font-size: 12.5px;
     color:  rgb(0, 0, 0);
-    line-height: 1.9;
-    font-weight: 200;
+    line-height: 1.5;
+    font-weight: 400;
   }
 }
 
