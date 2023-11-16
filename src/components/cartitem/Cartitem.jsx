@@ -22,7 +22,7 @@ function Cartitem({data}){
 			<div className="cart-itens-contet">
 				<h3 className="cart-item-title">{title}</h3>
 				<h3 className="cart-item-price">{formatCurrency(price,'BRL')}</h3>
-				<a href={permalink} className="comprar"  target="_blank" rel="noreferrer">Finalizar</a>
+				<a href={permalink} className="comprar"  target="_blank" rel="noreferrer">Finalizar!</a>
       
 				<button type="button" className="button__remove-item" 
 					onClick={handremov}>
