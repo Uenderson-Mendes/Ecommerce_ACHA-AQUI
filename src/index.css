@@ -19,6 +19,7 @@ body{
     max-width: 1460px;
     margin: 0 auto;
     justify-content: center;
+    color: rgb(red, green, blue);
   }
     
   }
